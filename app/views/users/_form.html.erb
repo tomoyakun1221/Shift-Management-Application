@@ -6,6 +6,13 @@
 
   <%= f.label :email, class: "label-#{yield(:class_text)}" %>
   <%= f.email_field :email, class: "form-control" %>
+  
+  <%= f.label :admin, "権限", class: "label-#{yield(:class_text)}" %>
+  <% if @user.admin? %>
+    <%= f.select :admin, options_for_select({"一般": false, "管理者": true}, true), {}, class: "form-control" %>
+  <% else %>
+    <%= f.select :admin, options_for_select({"一般": false, "管理者": true}), {}, class: "form-control" %>
+  <% end %>
 
   <%= f.label :password, class: "label-#{yield(:class_text)}" %>
   <%= f.password_field :password, class: "form-control" %>
