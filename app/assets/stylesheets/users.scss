@@ -20,3 +20,26 @@
 .btn-signup {
   margin-top: 10px;
 }
+
+/* ユーザー編集フォーム */
+
+.label-user--edit {
+  margin-top: 5px;
+}
+
+.btn-user--edit {
+  margin-top: 10px;
+}
+
+/* ユーザー一覧ページ */
+
+#table-users {
+  th {
+    vertical-align: middle;
+    text-align: center;
+  }
+  td {
+    vertical-align: middle;
+    text-align: center;
+  }  
+}
