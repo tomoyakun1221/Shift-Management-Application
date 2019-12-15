@@ -10,4 +10,11 @@ Rails.application.routes.draw do
   delete '/logout', to: 'sessions#destroy'
   
   resources :users
+  
+  resources :attendances do
+    member do
+      get 'edit_salary_management_info'
+      patch 'update_salary_management_info'
+    end
+  end
 end

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  day: 2019-12-14
+  work_start_time: 2019-12-14 06:54:18
+  work_end_time: 2019-12-14 06:54:18
+  salary: MyString
+  user: one
+
+two:
+  day: 2019-12-14
+  work_start_time: 2019-12-14 06:54:18
+  work_end_time: 2019-12-14 06:54:18
+  salary: MyString
+  user: two
